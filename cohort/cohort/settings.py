@@ -81,17 +81,17 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'URL': os.getenv('postgresql://postgres:ejSBUM7fgiZFF9FISL1B@containers-us-west-107.railway.app:6487/railway'),
-#         'NAME': os.getenv('railway'),
-#         'USER': os.getenv('postgres'),
-#         'PASSWORD': os.getenv('ejSBUM7fgiZFF9FISL1B'),
-#         'HOST': os.getenv('containers-us-west-107.railway.app'),
-#         'PORT': os.getenv('6487'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': 'postgresql://postgres:ejSBUM7fgiZFF9FISL1B@containers-us-west-107.railway.app:6487/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'ejSBUM7fgiZFF9FISL1B',
+        'HOST': 'containers-us-west-107.railway.app',
+        'PORT': '6487',
+    }
+}
 
 
 # Password validation
